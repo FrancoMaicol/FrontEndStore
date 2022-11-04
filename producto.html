@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end Store</title>
+    <!--shift+alt+flecha hacia abajo y se duplica-->
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><!--"a" hace referencia a un enlace-->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo"><!--alt es texto alternativo-->
+        </a>    
+    </header>
+
+    <nav class="navegacion"><!--alt clickeas y tendras multiples posiciones para escribir--> 
+        <a class="navegacion__enlace navegacion__enlace--activo"  href="index.html">Tienda</a> <!--a*2 multiplica por dos-->
+        <a class="navegacion__enlace"  href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>VueJS</h1>
+
+        <div class="camisa">
+            <img class="camisa__magen" src="img/1.jpg" alt="camisa producto">
+
+            <div>
+                <p>Nam dapibus scelerisque nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar talla--</option><!--El disable hace que no pueda eligir esa opción El selected hace que aparezca la opcion pero sin poder elegirla-->
+                        <option class="formulario__opcion">Chica</option>
+                        <option class="formulario__opcion">Mediana</option>
+                        <option class="formulario__opcion">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1"><!--placeholder puedes agregar el nombre dentro del recuadro-->
+                    <!--Con el min eliges el numero minimo que puede elegir el usuario-->
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form><!--Con el form puedes hacer que se pueda elegir opciones-->
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
